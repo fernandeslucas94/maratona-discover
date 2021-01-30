@@ -1,0 +1,2 @@
+##
+This repository is about the "Maratona Discovery". Wich are a marathon of HTML/CSS/JS, with a full project for everyone that are beggining as as Web Developer, or are wanting to improve their skills!
