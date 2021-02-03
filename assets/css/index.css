@@ -13,11 +13,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, o, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .container {
     margin: auto;
 
     width: min(90vw, 800px);
 }
+
+
+
+
+
 
 
 /* ==== Titles ==== */
@@ -33,17 +50,28 @@ h2 {
 
 
 
+
+
+
+
 /* ===== Header ===== */
 header {
     background: #2D4A22;
     padding: 2rem 0 10rem;
     text-align: center;
+
+    width: 100vw;
 }
 
 #logo {
     color: #FFF;
     font-weight: 100;
 }
+
+
+
+
+
 
 
 
@@ -56,6 +84,11 @@ header {
 #balance h2 {
     color: #FFF;
 }
+
+
+
+
+
 
 
 
@@ -74,6 +107,10 @@ header {
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p {
@@ -88,10 +125,22 @@ header {
     color: #FFF;
 }
 
+
+
+
+
+
+
+
+
 /* ==== Data Table ==== */
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
+}
+
+table {
+    margin: auto;
 }
 
 table thead tr th:first-child,
@@ -143,6 +192,12 @@ table tbody tr {
 table tbody tr:hover {
     opacity: 1;
 }
+
+
+
+
+
+
 
 /* ==== Footer ==== */
 footer {
