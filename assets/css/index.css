@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 93.75%; /* 15 px */
+} 
+
 body {
     background-color: #f0f2f5;
     font-family: 'Poppins', sans-serif;
@@ -50,9 +55,20 @@ h2 {
 
 
 
+/* ==== Links and Buttons ==== */
+a {
+    color: #49AA26;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #3dd705;
+}
 
-
+.button.new {
+    margin-bottom: .8rem;
+    display: inline-block;
+}
 
 /* ===== Header ===== */
 header {
@@ -137,6 +153,10 @@ header {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
+
+    display: block;
+
+    overflow-x: auto;
 }
 
 table {
@@ -145,7 +165,12 @@ table {
 
 table thead tr th:first-child,
 table tbody tr td:first-child {
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 table td {
@@ -206,4 +231,21 @@ footer {
     color: var(--dark-blue);
 
     opacity: 0.6;
+}
+
+
+
+
+/* ==== Responsive ==== */
+@media (min-width: 800px) {
+    
+    html {
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
