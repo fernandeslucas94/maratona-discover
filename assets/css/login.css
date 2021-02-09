@@ -6,9 +6,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
+/* :root {
 
-}
+} */
 
 body {
     background: #FFF;
@@ -79,4 +79,6 @@ footer {
     color: var(--dark-blue);
 
     opacity: 0.6;
+
+    background-color: #EEE;
 }
